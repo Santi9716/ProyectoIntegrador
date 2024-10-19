@@ -21,9 +21,10 @@ body{
     max-width: 1200px;
 }
 body .banner{
-    background-image:url(images/banner3.jpg);
+    background-image:url(./images/fondo1\ b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     flex: 100%;
     min-height: 70vh;
     width: 100%;
@@ -105,56 +106,97 @@ nav a{
     width: 100%;
     min-height: 8vh;
     position: relative;
-    align-items: center;
-    display: flex;
     border: solid white;
 }
- input{
-    width: 350px;
-    padding: 10px;
-    padding-right: 35px;
-    border-radius: 5px;
-    border: 0;
-    outline: none;
-    font-size: 16px;
-    float: right;
-    flex:0;
- }
- .button{
-    flex: 10%;
-    min-height: 15vh;
-    background-color: rgb(66, 55, 218);
-    padding: 10px 15px;
-    position: absolute;
-    border: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 0px 5px 5px 0px;
-    color: white;
-    cursor: pointer;
- }
+.container h2{
+    color: #bde0ff;
+    text-shadow: 5px 5px 5px black;
+    font-size: 40px;
+    text-align: center;
+}
 
- 
-main .main{
+main .banner{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-main .main .menu{
-    font-family: 'Mermaid',sans-serif;
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     text-align: center;
-    justify-content: left;
-    border-right: solid gray;
-    flex: 50%;
-    min-height: 50vh; 
+    width: 340px;
 }
-main .main .contenido{
-    font-family: 'Mermaid',sans-serif;
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label{
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2PX solid #F0FAF1;
+    color: #283629;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #b5cab6;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    justify-content: right;
-    border-left: solid gray;
-    flex: 50%;
-    min-height: 50vh; 
+}
+
+.form-txt a{
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+btn:hover{
+    background-color: #50e04b;
+}
+
+@media(max-width:991px) {
+    body{
+        padding: 30px;
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
 }
 
 footer{
@@ -184,9 +226,9 @@ p{
     line-height: 23px;
     padding-bottom: 25px;
 }
-img{
+/* img{
     width: 63%;
-}
+} */
 footer .redes{
    padding-left: 30px;
 }

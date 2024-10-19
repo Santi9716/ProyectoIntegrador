@@ -21,9 +21,10 @@ body{
     max-width: 1200px;
 }
 body .banner{
-    background-image:url(images/banner3.jpg);
+    background-image:url(images/banner5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     flex: 100%;
     min-height: 70vh;
     width: 100%;
@@ -105,9 +106,35 @@ nav a{
     width: 100%;
     min-height: 8vh;
     position: relative;
-    align-items: center;
-    display: flex;
     border: solid white;
+}
+.container h2{
+    color: #bde0ff;
+    text-shadow: 5px 5px 5px black;
+    font-size: 40px;
+    text-align: center;
+}
+.banner .quienessomos{
+    font-size: 30px;
+    text-align: center;
+}
+.text p{
+    color: #2b2b2b;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.banner .dos{
+    min-height: 45vh;
+    display: flex;
+}
+.banner .dos .left{
+    font-size: 30px;
+    text-align: center;
+}
+.banner .dos .right{
+    font-size: 30px;
+    text-align: center;
 }
  input{
     width: 350px;
@@ -145,7 +172,7 @@ main .main .menu{
     text-align: center;
     justify-content: left;
     border-right: solid gray;
-    flex: 50%;
+    flex: 30%;
     min-height: 50vh; 
 }
 main .main .contenido{
@@ -153,7 +180,7 @@ main .main .contenido{
     text-align: center;
     justify-content: right;
     border-left: solid gray;
-    flex: 50%;
+    flex: 70%;
     min-height: 50vh; 
 }
 
