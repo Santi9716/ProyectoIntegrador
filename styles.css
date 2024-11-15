@@ -17,8 +17,6 @@ html{
 }
 
 body{
-    /* width: 100%;
-    max-width: 1200px; */
     background-image: url(images/Background\ -\ Aire\ Acondicionado1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,10 +29,6 @@ h1{
     font-family: 'Mermaid',sans-serif;
 }
 
-/* .containerP .carousel-banner{
-    padding: 10px;
-    margin: auto;
-} */
 
 .carousel-item{
     max-height: 400px;
@@ -150,4 +144,16 @@ img{
 }
 footer .redes{
    padding-left: 30px;
+}
+@media(max-width:991px) {
+    body{
+        padding: 30px;
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
 }

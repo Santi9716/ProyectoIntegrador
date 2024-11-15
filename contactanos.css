@@ -8,7 +8,7 @@
 
 html{
     
-    background-color: rgb(245, 240, 240);
+    background-color: white;
     width: 100%;
     height: 100%;
     max-width: 1200px;
@@ -17,37 +17,41 @@ html{
 }
 
 body{
-    width: 100%;
-    max-width: 1200px;
-}
-body .banner{
-    background-image:url(./images/fondo1\ b.jpg);
+    background-image: url(images/banner5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    flex: 100%;
-    min-height: 70vh;
-    width: 100%;
-    border-radius: 20px;
- }
+}
+
+nav{
+    margin: auto;
+    color: black;
+    font-weight: bolder;
+    max-height: 70px;
+}
+
+
+.navbar-brand img{
+    width: 50px;
+}
+
 
 h1{
     color: white;
     text-align: center;
     font-family: 'Mermaid',sans-serif;
 }
+
 header .header{
     color: white;
-    background-color: rgb(66, 55, 218);
+    background-color: rgb(22, 111, 200);
     width: 100%;
     min-height: 15vh;
     display: flex;
     flex-wrap: nowrap;
     margin-top: 10px;
-    border: solid white;
 }
 header .header .logo{
-    background-color: rgb(66, 55, 218);
+    background-color: rgb(22, 111, 200);
      flex: 25%;
      min-height: 4vh;
      margin-bottom: 10px;
@@ -58,9 +62,10 @@ header .header .logo{
 .header .logo .img{
     flex: 20px;
 }
+
+
 header .header .titulo{
     font-size: 20px;
-    background-color: rgb(66, 55, 218);
     text-align: center;
     flex: 55%;
     min-height: 10vh;
@@ -70,139 +75,34 @@ header .header .titulo{
 header .header .ingreso{
     text-align: center;
     font-size: smaller;
-    background-color: rgb(66, 55, 218);
     flex: 10%;
     min-height: 10vh;
     margin-bottom: 10px;
 }
 header .header .compra{
-    background-color: rgb(66, 55, 218);
     flex: 10%;
     min-height: 10vh;
     margin-bottom:  10px;
 }
 
-nav .nav{
-    background-color: rgb(66, 55, 218);
-    width: 100%;
-    height: 15vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    border: solid white;
-}
-nav a{
-    color: white;
-    flex: 20%;
-    box-shadow: 1px 1px 3px 3px;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-}
 
-.container{
-    background-color:rgb(66, 55, 218);
-    width: 100%;
-    min-height: 8vh;
-    position: relative;
-    border: solid white;
-}
-.container h2{
-    color: #bde0ff;
-    text-shadow: 5px 5px 5px black;
-    font-size: 40px;
-    text-align: center;
-}
 
-main .banner{
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main{
+width: 100%;
+min-height: 35vh;
+display: flex;
 }
-
-form{
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 340px;
-}
-
-.input-group{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-label{
-    color: gray;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-input, textarea{
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: #EDFFF0;
-    border: 2PX solid #F0FAF1;
-    color: #283629;
-    outline: none;
-}
-
-input::placeholder, textarea::placeholder{
-    color: #b5cab6;
-}
-
-.form-txt{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.form-txt a{
-    color: #76b28e;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.btn{
-    font-size: 16px;
-    color: #ffffff;
-    border: 0;
-    border-radius: 25px;
-    background-color: #51d94c;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
-    cursor: pointer;
-}
-
-btn:hover{
-    background-color: #50e04b;
-}
-
-@media(max-width:991px) {
-    body{
-        padding: 30px;
-    }
-    form{
-        padding: 50px 30px;
-        width: 100%;
-    }
-    input{
-        padding: 15px;
-    }
+ 
+body h2{
+text-align: center;
+justify-content: center;
+align-items: center;
 }
 
 footer{
     width: 100%;
     max-width: 1200px;
-    background-color: rgba(66, 55, 218,0.5);
+    background-color: rgba(22, 111, 200,0.5);
     height: 100%;
     font-size: .875rem;
     text-align: center;
@@ -222,13 +122,120 @@ footer a{
     text-decoration: none;
 }
 p{
-    text-align: justify;
+    text-align: center;
     line-height: 23px;
     padding-bottom: 25px;
 }
-/* img{
+img{
     width: 63%;
-} */
+}
 footer .redes{
    padding-left: 30px;
 }
+
+main .banner{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img{
+    width: 100px;
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    background-color: rgba(167, 178, 243, 0.3);
+    text-align: center;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+.d-flex{
+    column-gap: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label{
+    color: rgb(14, 13, 13);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #f5f7f5;
+    border: 2PX solid #F0FAF1;
+    color: #283629;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #a9bbaa;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a{
+    color: green;
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 16px;
+    color: #ffffff;
+    border: solid;
+    border-radius: 25px;
+    background-color: #258a22;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #50e04b;
+}
+
+.btn1{
+    text-align: center;
+}
+
+.btn1 input{
+    border: solid green;
+    color: white;
+    background-color: green;
+}
+
+@media(max-width:991px) {
+    body{
+        padding: 30px;
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
+}
+

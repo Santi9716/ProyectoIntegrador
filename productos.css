@@ -263,4 +263,17 @@ footer .redes{
     border-radius: 20px;
  } */
 
+ @media(max-width:991px) {
+    body{
+        padding: 30px;
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
+}
+
  
