@@ -94,6 +94,16 @@ nav{
     text-align: center;
 }
 
+.carousel-inner {
+    height: 370px; /* Fija la altura del carrusel */
+  }
+
+  .carousel-inner img {
+    height: 100%; /* La imagen ocupa todo el alto */
+    width: 100%;  /* La imagen ocupa todo el ancho */
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
+  }
+
 main{
     font-size: 1rem;
     display: grid;
